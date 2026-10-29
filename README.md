@@ -2,6 +2,13 @@
 
 **(NOT YET SPEEDRUN-LEGAL)** patch for Outer Wilds making text translation no longer framerate dependent.
 
+# Installing the patch
+
+* Download `TranslatorFix-v*.*.*.zip` from releases
+* Right click Outer Wilds on Steam, select Manage > Browse local files
+* Copy the contents of `TranslatorFix-v*.*.*.zip` into the `Outer Wilds` folder
+* Open the game. Try reading the easter egg scroll on Brittle Hollow to see if the patch worked; if it did, it should take less than a second to translate.
+
 # Q&A
 
 ## Why not go through the Mod Loader?
