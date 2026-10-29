@@ -67,11 +67,12 @@ namespace Doorstop
             // branch to the start of the "if" condition
             ilProcessor.InsertAfter(lastIfBodyInstruction, ilProcessor.Create(OpCodes.Br_S, firstIfConditionInstruction));
 
-            // for debugging: write the updated assembly to a file
-            // (to then decompile and verify it was updated correctly)
+            // write the modified assembly to a file in the mod's folder
+            // this will be read by the game in place of the original file
+            // due to unity doorstop's dll_search_path_override
+            asm.Write(Path.Combine(Path.GetDirectoryName(typeof(Entrypoint).Assembly.Location), "Assembly-CSharp.dll"));
 
-            //asm.Write(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "asm-out.dll"));
-
+            // cleanup
             asm.Dispose();
         }
     }
