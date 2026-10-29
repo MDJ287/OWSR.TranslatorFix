@@ -11,6 +11,10 @@ Inspired by Silksong speedrunning's [SpeedPatch](https://github.com/hk-speedrunn
 * Copy the contents of `TranslatorFix-v*.*.*.zip` into the `Outer Wilds` folder
 * Open the game. Try reading the easter egg scroll on Brittle Hollow to see if the patch worked; if it did, it should take less than a second to translate.
 
+# Uninstalling the patch
+
+Browse local files for Outer Wilds, delete the `owsr` folder and its contents as well as `.doorstop_version`, `doorstop_config.ini`, and `winhttp.dll`. This should remove any trace that the patch was ever installed.
+
 # Q&A
 
 ## Why not go through the Mod Loader?
