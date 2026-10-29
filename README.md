@@ -20,4 +20,4 @@ Not yet! We will be holding a community vote at some point, but currently people
 
 ## I have a question/suggestion, or I think you made a mistake, or I want to discuss the patch
 
-Please ping me (**@mdj287**) on the [Outer Wilds Speedrun Discord](https://discord.gg/4us2uATJpn)! I will be happy to respond to anything about the patch
+Please ping me (**@mdj287**) on the [Outer Wilds Speedrun Discord](https://discord.gg/4us2uATJpn)! I will be happy to respond to anything about the patch.
