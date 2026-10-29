@@ -12,9 +12,7 @@ The Outer Wilds Mod Loader has some effects that affect speedruns; for example, 
 
 TODO
 
-## How do I know this program is safe?
-
-TODO
+Temporary short answer: it uses [Unity Doorstop](https://github.com/NeighTools/UnityDoorstop) and [Mono.Cecil](https://www.mono-project.com/docs/tools+libraries/libraries/Mono.Cecil/) to modify the assembly of the game so that the translator translates more than 1 word per frame.
 
 ## Is this patch legal for speedruns?
 
