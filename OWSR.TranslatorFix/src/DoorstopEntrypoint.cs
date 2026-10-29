@@ -12,8 +12,12 @@ namespace Doorstop
         public static void Start()
         {
             string asmDirectory = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "OuterWilds_Data", "Managed", "Assembly-CSharp.dll");
+            string thisDirectory = typeof(Entrypoint).Assembly.Location;
 
             DefaultAssemblyResolver resolver = new DefaultAssemblyResolver();
+            resolver.AddSearchDirectory(Path.GetDirectoryName(asmDirectory));
+            resolver.AddSearchDirectory(Path.GetDirectoryName(thisDirectory));
+            resolver.AddSearchDirectory(Path.GetDirectoryName(typeof(object).Assembly.Location));
             ReaderParameters readerParams = new ReaderParameters
             {
                 AssemblyResolver = resolver,
@@ -64,13 +68,13 @@ namespace Doorstop
 
             if (firstIfConditionInstruction == null) return;
 
-            // branch to the start of the "if" condition
+            // branch to the start of the "if" condition at the end of its body (turn it into a while loop)
             ilProcessor.InsertAfter(lastIfBodyInstruction, ilProcessor.Create(OpCodes.Br_S, firstIfConditionInstruction));
 
             // write the modified assembly to a file in the mod's folder
             // this will be read by the game in place of the original file
             // due to unity doorstop's dll_search_path_override
-            asm.Write(Path.Combine(Path.GetDirectoryName(typeof(Entrypoint).Assembly.Location), "Assembly-CSharp.dll"));
+            asm.Write(Path.Combine(Path.GetDirectoryName(thisDirectory), "Assembly-CSharp.dll"));
 
             // cleanup
             asm.Dispose();
