@@ -16,7 +16,7 @@ Temporary short answer: it uses [Unity Doorstop](https://github.com/NeighTools/U
 
 ## Is this patch legal for speedruns?
 
-Not yet! We will be holding a community vote at some point, but currently people seem to be in favor.
+Not yet! We will probably be holding a community vote at some point. Currently most people seem to be in favor.
 
 ## I have a question/suggestion, or I think you made a mistake, or I want to discuss the patch
 
