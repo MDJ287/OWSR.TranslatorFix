@@ -2,6 +2,8 @@
 
 **(NOT YET SPEEDRUN-LEGAL)** patch for Outer Wilds making text translation no longer framerate dependent.
 
+Inspired by Silksong speedrunning's [SpeedPatch](https://github.com/hk-speedrunning/Silksong.SpeedPatch).
+
 # Installing the patch
 
 * Download `TranslatorFix-v*.*.*.zip` from releases
